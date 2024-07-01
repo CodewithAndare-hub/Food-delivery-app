@@ -144,7 +144,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
-
+DATABASE_ROUTERS = ['myproject.router.DatabaseRouter']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ACCOUNT_ADAPTER = 'staff.account_adapter.NoNewUserAccountAdapter'
 LOGIN_REDIRECT_URL = 'dashboard'
